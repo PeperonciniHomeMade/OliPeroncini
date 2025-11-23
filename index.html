@@ -360,6 +360,10 @@
         <h2>Ordine Olio</h2>
       </div>
       <form onsubmit="handleFormSubmit(event)">
+        <label class="form-label">Nome e Cognome</label>
+        <input type="text" class="form-input" name="nome_cognome" placeholder="Nome e Cognome" required style="margin-bottom: 10px;">
+        <label class="form-label">Email / Numero di Telefono</label>
+        <input type="text" class="form-input" name="contatto" placeholder="Email o numero di telefono" required style="margin-bottom: 10px;">
         <label class="form-label">Prodotto</label>
         <select class="form-select" name="prodotto_olio" required>
           <option value="">Seleziona la varietà...</option>
@@ -396,6 +400,10 @@
         <h2>Ordine Polveri</h2>
       </div>
       <form onsubmit="handleFormSubmit(event)">
+        <label class="form-label">Nome e Cognome</label>
+        <input type="text" class="form-input" name="nome_cognome" placeholder="Nome e Cognome" required style="margin-bottom: 10px;">
+        <label class="form-label">Email / Numero di Telefono</label>
+        <input type="text" class="form-input" name="contatto" placeholder="Email o numero di telefono" required style="margin-bottom: 10px;">
         <label class="form-label">Prodotto</label>
         <select class="form-select" name="prodotto_polveri" required>
           <option value="">Seleziona la varietà...</option>
@@ -425,7 +433,7 @@
         </div>
       </form>
     </div>
-    <!-- Dettagli olio e polveri (tutti, copia/incolla come sopra) -->
+    <!-- INIZIO dettagli olio -->
     <div id="detail_olio_naga" class="form-page detail-page">
       <div class="category-header"><i class="fa-solid fa-pepper-hot"></i><h2>Olio di Naga Morich Red</h2></div>
       <div class="spicy-level"><span style="color:#d32f2f;">🌶️🌶️🌶️🌶️</span><span style="color:#e0e0e0;">🌶️</span> 4 su 5</div>
@@ -444,7 +452,8 @@
     <div id="detail_olio_scorpion" class="form-page detail-page"><div class="category-header"><i class="fa-solid fa-pepper-hot"></i><h2>Olio di Scorpion Chocolate</h2></div><div class="spicy-level"><span style="color:#d32f2f;">🌶️🌶️🌶️🌶️🌶️</span> 5 su 5</div><div><b>Scala Scoville:</b> 1.200.000–2.000.000 SHU</div><p><b>Descrizione peperoncino:</b> Sapore intenso e aromatico, colore marrone scuro, bruciore forte e prolungato.</p><p><b>Prodotto:</b> Olio super hot, ingredienti locali selezionati, perfetto per chi cerca il massimo.</p><button class="btn-outline" onclick="goBack()">Torna indietro</button></div>
     <div id="detail_olio_reaper_choc" class="form-page detail-page"><div class="category-header"><i class="fa-solid fa-pepper-hot"></i><h2>Olio di Carolina Reaper Chocolate</h2></div><div class="spicy-level"><span style="color:#d32f2f;">🌶️🌶️🌶️🌶️🌶️</span> 5 su 5</div><div><b>Scala Scoville:</b> 1.400.000–2.000.000 SHU</div><p><b>Descrizione peperoncino:</b> Variante "cioccolato" della Reaper, sapore ancora più aromatico e forte.</p><p><b>Prodotto:</b> Olio da Carolina Reaper Chocolate locale, per chi vuole il fuoco assoluto.</p><button class="btn-outline" onclick="goBack()">Torna indietro</button></div>
     <div id="detail_olio_kraken" class="form-page detail-page"><div class="category-header"><i class="fa-solid fa-pepper-hot"></i><h2>Olio di Kraken Peach</h2></div><div class="spicy-level"><span style="color:#d32f2f;">🌶️🌶️🌶️🌶️</span><span style="color:#e0e0e0;">🌶️</span> 4 su 5</div><div><b>Scala Scoville:</b> 700.000–900.000 SHU</div><p><b>Descrizione peperoncino:</b> Raro, color pesca, sapore fruttato, piccante ma meno estremo.</p><p><b>Prodotto:</b> Olio originale, ingredienti km zero, per chi vuole una piccantezza avvolgente.</p><button class="btn-outline" onclick="goBack()">Torna indietro</button></div>
-    <!-- Polveri DETTAGLIO (tutti, copia/incolla identico) -->
+
+    <!-- INIZIO dettagli polveri -->
     <div id="detail_polveri_borgred" class="form-page detail-page"><div class="category-header"><i class="fa-solid fa-pepper-hot"></i><h2>Polvere di Borg 9 Red</h2></div><div class="spicy-level"><span style="color:#d32f2f;">🌶️🌶️🌶️🌶️🌶️</span> 5 su 5</div><div><b>Scala Scoville:</b> 1.000.000–1.200.000 SHU</div><p><b>Descrizione peperoncino:</b> Incrocio 7 Pot, aromi intensi, bruciore devastante.</p><p><b>Prodotto:</b> Polvere da peperoncini freschi a km zero, ideale per salse, grigliate, primi piatti.</p><button class="btn-outline" onclick="goBack()">Torna indietro</button></div>
     <div id="detail_polveri_borgchoc" class="form-page detail-page"><div class="category-header"><i class="fa-solid fa-pepper-hot"></i><h2>Polvere di Borg 9 Chocolate</h2></div><div class="spicy-level"><span style="color:#d32f2f;">🌶️🌶️🌶️🌶️🌶️</span> 5 su 5</div><div><b>Scala Scoville:</b> 1.100.000–1.300.000 SHU</div><p><b>Descrizione peperoncino:</b> Gusto ricco, terroso, forte e persistente.</p><p><b>Prodotto:</b> Polvere da Borg 9 Chocolate a km zero, per veri intenditori del piccante.</p><button class="btn-outline" onclick="goBack()">Torna indietro</button></div>
     <div id="detail_polveri_habChoc" class="form-page detail-page"><div class="category-header"><i class="fa-solid fa-pepper-hot"></i><h2>Polvere di Habanero Chocolate</h2></div><div class="spicy-level"><span style="color:#d32f2f;">🌶️🌶️🌶️</span><span style="color:#e0e0e0;">🌶️🌶️</span> 3 su 5</div><div><b>Scala Scoville:</b> 200.000–425.000 SHU</div><p><b>Descrizione peperoncino:</b> Aroma fruttato, sapore cioccolatoso.</p><p><b>Prodotto:</b> Polvere gourmet da peperoncini locali, perfetta per piatti etnici e fusion.</p><button class="btn-outline" onclick="goBack()">Torna indietro</button></div>
@@ -459,4 +468,5 @@
   </main>
 </body>
 </html>
+
 
